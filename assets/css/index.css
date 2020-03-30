@@ -37,3 +37,65 @@ div:hover .proj {
   transform: translateY(-29vh);
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  main {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  img {
+    position: absolute;
+    height: 27vh;
+    width: 48vw;
+    margin: 0;
+  }
+  .proj {
+    position: relative;
+    top: 29vh;
+    background-color: rgba(0, 0, 0, 0.438);
+    height: 27vh;
+    width: 48vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  img {
+    position: absolute;
+    height: 57vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .proj {
+    position: relative;
+    top: 29vh;
+    background-color: rgba(0, 0, 0, 0.438);
+    height: 57vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all;
+    opacity: 0;
+  }
+}
